@@ -223,3 +223,33 @@ body {
   color: transparent;
   animation: gradient-animation 6s infinite; /* Анимация длится 3 секунды и повторяется бесконечно */
 }
+.text-x{
+    text-decoration: none;
+    color: black;
+}
+.photo-x{
+    border-radius: 5%;
+}
+.text-t{
+    color: red;
+    text-decoration: none;
+}
+.bro {
+    background: rgba(0, 0, 0, 0.27);
+}
+.fone{
+    background: 
+		radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
+		radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+.fone-2{
+    background: 
+    radial-gradient(ellipse farthest-corner at right bottom, #c0c0c0 0%, #a9a9a9 8%, #808080 30%, #7b7a7a 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #f5f5f5 8%, #dcdcdc 25%, #a9a9a9 62.5%, #a9a9a9 100%);
+
+}
+.fone-3{
+    background: 
+    radial-gradient(ellipse farthest-corner at right bottom, #b84233 0%,  #c17461 8%, #a74a2a 30%, #8e3d2a 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #801c00 0%, #a5472b 8%, #c17461 25%, #8f554b 62.5%, #a36d58 100%);
+}
