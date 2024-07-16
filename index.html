@@ -13,6 +13,12 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
 
+      
+      
+      
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+      
 <!--                            Шрифты-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -175,13 +181,14 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ms-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active me-4" aria-current="page" href="#">Главная</a>
+            <a class="nav-link active me-4" aria-current="page">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link me-4" data-togle="modal" data-target="" href="#">Контакты</a>
+            <a class="nav-link me-4" data-toggle="modal" href="" data-target="#exampleModal-2" >Контакты</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link me-5" href='index-2.html' target="_blank">Полезное</a>
+            <a class="nav-link me-4" data-toggle="modal" href="" data-target="#exampleModal">Полезное</a>
+
           </li>
         </ul>
       </div>
@@ -191,8 +198,47 @@
 
 <!--      Modal-->
       
-      
-      
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLable" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-12" id="exampleModalLable">🛠 Полезные сервисы 🛠</h5>
+                <button class="btn-close" data-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body fs-5">
+                <p>1⃣ Sickw - сервис предоставляющий информацию и услуги по проверке статуса iCloud по SN или Imei на iPhone <a href="https://sickw.com/" target="_blank">https://sickw.com/</a>✅</p>
+                <p>2⃣ iFreeiCloud - сервис, предлагающий бесплатную проверку статуса блокировки iCloud на устройствах Apple.<a href="https://ifreeicloud.co.uk/free-check" target="_blank">https://ifreeicloud.co.uk/free-check</a>✅</p>
+                <p>3⃣ iUnlocker - сервис предоставляет услуги по проверке наличия блокировки, а затем разблокировке мобильных устройств (Apple, Xiaomi, Samsung, Huawei, Oppo...). <a href="https://iunlocker.com/" target="_blank">https://iunlocker.com/</a>✅</p>
+            </div>
+            <div class="modal-body fs-6">
+                <p>UnlockTool Files: <a href="https://www.mediafire.com/folder/n0gvup677wkt4/Apple/" target="_blank">https://www.mediafire.com/folder/n0gvup677wkt4/Apple</a>✅</p>
+                <p>Teleed.ru: <a href="https://www.teleed.ru/программы-и-драйверы/" target="_blank">https://www.teleed.ru/программы-и-драйверы/</a>✅</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+      <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLable" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-12" id="exampleModalLable">👤Контакты👤</h5>
+                <button class="btn-close" data-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="fs-4">1. Связь с администратором: <a href="https://t.me/Master5775" target="_blank">тут</a></p>
+                <p class="fs-4">2. Наш бот в Telegramm: <a href="https://t.me/Wonder_Phone_bot" target="_blank">тут</a></p>
+                <p class="fs-4">3. Наша группа в Telegramm: <a href="https://t.me/WonderPhone" target="_blank">тут</a></p>
+                <p class="fs-4">3. Наша почта: <a href="mailto:wonder.phone.ru@gmail.com" target="_blank">тут</a></p>
+            </div>
+            <div class="modal-body">
+                <p> <a href="" target="_blank"></a></p>
+                <img src="img/home_1-1.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto photo-x" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+        </div>
+        
+    </div>
+</div>
 <!--      Modal end-->
 <main>
 
@@ -209,7 +255,7 @@
           <div class="carousel-caption text-start">
             <h1>Ремонтируем</h1>
             <p class="opacity-75">Мы осуществляем качественный ремонт электроники</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Подробнее</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#Repair">Подробнее</a></p>
           </div>
         </div>
       </div>
@@ -219,7 +265,7 @@
           <div class="carousel-caption">
             <h1>Покупаем</h1>
             <p>Мы занимаемся скупкой девайсов.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Подробнее</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#Pokupaem">Подробнее</a></p>
           </div>
         </div>
       </div>
@@ -229,7 +275,7 @@
           <div class="carousel-caption text-end">
             <h1>Продаём</h1>
             <p>Мы реализуем продажу гаджетов</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Подробнее</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#Prodaza">Подробнее</a></p>
           </div>
         </div>
       </div>
@@ -243,39 +289,116 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
+    
   <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
+      
     <div class="row">
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle photo-4" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
         <h2 class="fw-normal">Телефоны</h2>
-        <p>Разбит экран? Телефон не включается? Не заряжается или плохо держит заряд?</p>
-        <p><a class="btn btn-secondary" href="#">Вам сюда &raquo;</a></p>
+        <p class="fs-5">Разбит экран? Телефон не включается? Не заряжается или плохо держит заряд?</p>
+        <p><a class="btn btn-primary" href="#" data-toggle="modal" data-target="#RepairModal">Вам сюда &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle photo-5" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
         <h2 class="fw-normal">Планшеты</h2>
-        <p>Планшет разбит? Глючит? Не работает или быстро разряжается?</p>
-        <p><a class="btn btn-secondary" href="#">Вам сюда &raquo;</a></p>
+        <p class="fs-5">Планшет разбит? Глючит? Не работает или быстро разряжается?</p>
+        <p><a class="btn btn-primary" href="#" data-toggle="modal" data-target="#RepairModal-2">Вам сюда &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle photo-6" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
         <h2 class="fw-normal">Ноутбуки</h2>
-        <p>Не запускается? Перегревается и шумит? Не работает клавиатура или что-то ещё?</p>
-        <p><a class="btn btn-secondary" href="#">Вам сюда &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+        <p class="fs-5">Не запускается? Перегревается и шумит? Не работает клавиатура или что-то ещё?</p>
+        <p><a class="btn btn-primary" href="#" data-toggle="modal" data-target="#RepairModal-3">Вам сюда &raquo;</a></p>
+      </div>
+    </div>
 
-
+<!--    Price Modal-->
+    
+   <div class="modal fade bro" id="RepairModal" tabindex="-1" aria-labelledby="exampleModalLable" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content fone">
+            <div class="modal-header">
+                <h5 class="modal-title text-12" id="exampleModalLable">🛠 Прайс-лист по ремонту телефонов 🛠</h5>
+                <button class="btn-close" data-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Замена дисплея от 1000₽<sup>*</sup></p>
+                <p>Замена аккумулятора от 700₽<sup>*</sup></p>
+                <p>Замена задней крышки от 500₽<sup>*</sup></p>
+                <p>Замена камеры от 500₽<sup>*</sup></p>
+                <p>Замена гнезда зарядки от 1000₽<sup>*</sup></p>
+                <p>Замена динамиков от 500₽<sup>*</sup></p>
+                <p>Замена корпуса от 1000₽<sup>*</sup></p>
+                <p>Восстановление True Tone от 500₽<sup>*</sup></p>
+                <p>Ремонт Face-iD от 2000₽<sup>*</sup></p>
+                <p>Прошивка устройства от 500₽<sup>*</sup></p>
+                <p>Ремонт материнской платы от 1000₽<sup>*</sup></p>
+                <p>Сброс пароля и блокировки Google от 700₽<sup>*</sup></p>
+                <p>Официальный обход mi аккаунта от 1000₽<sup>*</sup></p>
+                <p>Обход iCloud (модели iPhone от 6 до X) от 1000₽<sup>*</sup></p>
+                <p>Увеличение памяти на iPhone от 2000₽<sup>*</sup></p>
+                <hr>
+                <p><a class="text-t">*</a><a>-Цены ремонта указаны без стоимости запчастей; зависят от модели устройства, состояния, причины поломки, а также дополнительных дефектов.</a></p>
+            </div>
+        </div>
+        
+    </div>
+</div> 
+<div class="modal fade bro" id="RepairModal-2" tabindex="-1" aria-labelledby="exampleModalLable" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content fone-2">
+            <div class="modal-header">
+                <h5 class="modal-title text-12" id="exampleModalLable">🛠 Прайс-лист по ремонту планшетов 🛠</h5>
+                <button class="btn-close" data-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Замена дисплея от 1300₽<sup>*</sup></p>
+                <p>Замена аккумулятора от 1000₽<sup>*</sup></p>
+                <p>Замена задней крышки от 500₽<sup>*</sup></p>
+                <p>Замена камеры от 500₽<sup>*</sup></p>
+                <p>Замена гнезда зарядки от 1000₽<sup>*</sup></p>
+                <p>Замена динамиков от 500₽<sup>*</sup></p>
+                <p>Замена корпуса от 1500₽<sup>*</sup></p>
+                <p>Ремонт Face-iD от 2000₽<sup>*</sup></p>
+                <p>Прошивка устройства от 500₽<sup>*</sup></p>
+                <p>Ремонт материнской платы от 1200₽<sup>*</sup></p>
+                <p>Сброс пароля и блокировки Google от 500₽<sup>*</sup></p>
+                <p>Официальный обход mi аккаунта от 1000₽<sup>*</sup></p>
+                <p>Увеличение памяти на iPad от 2000₽<sup>*</sup></p>
+                <hr>
+                <p><a class="text-t">*</a><a>-Цены ремонта указаны без стоимости запчастей; зависят от модели устройства, состояния, причины поломки, а также дополнительных дефектов.</a></p>
+            </div>
+        </div>
+        
+    </div>
+</div>  
+<div class="modal fade bro" id="RepairModal-3" tabindex="-1" aria-labelledby="exampleModalLable" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content fone-3">
+            <div class="modal-header">
+                <h5 class="modal-title text-12" id="exampleModalLable">🛠 Прайс-лист по ремонту ноутбуков 🛠</h5>
+                <button class="btn-close" data-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body fs-5">
+                <p>Замена матрицы от 1500₽<sup>*</sup></p>
+                <p>Замена аккумулятора от 500₽<sup>*</sup></p>
+                <p>Замена клавиатуры от 500₽<sup>*</sup></p>
+                <p>Замена корпуса от 1500₽<sup>*</sup></p>
+                <p>Замена жёсткого диска от 500₽<sup>*</sup></p>
+                <p>Замена оперативной памяти от 500₽<sup>*</sup></p>
+                <p>Чистка и замена термопасты от 1000₽<sup>*</sup></p>
+                <p>Переустановка системы от 1000₽<sup>*</sup></p>
+                <p>Ремонт материнской платы от 2000₽<sup>*</sup></p>
+                <hr>
+                <p><a class="text-t">*</a><a>-Цены ремонта указаны без стоимости запчастей; зависят от модели устройства, состояния, причины поломки, а также дополнительных дефектов.</a></p>
+            </div>
+        </div>
+        
+    </div>
+</div>  
     <!-- START THE FEATURETTES -->
- <hr class="featurette-divider">
+ <hr class="featurette-divider" id="Repair">
       
     <div class="row featurette text-6" id="featurette-section">
   <div class="col-md-7">
@@ -286,11 +409,8 @@
     <img src="img/rounded-in-photoretrica-0.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500">
   </div>
 </div>
-
-
-
  
-
+<div id="Pokupaem">
     <div class="row featurette text-8 mt-4">
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading fw-normal text-7 color-1 lh-1">Выгодные цены<span class="text-body-secondary"></span></h2>
@@ -300,9 +420,9 @@
         <img src="img/rounded-in-photoretrica-2.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text>
       </div>
     </div>
+      </div>
 
-
-    <div class="row featurette text-9 mt-4">
+    <div class="row featurette text-9 mt-4" id="Prodaza">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal text-7 color-4 lh-1">Акции и подарки</h2>
         <p class="lead fw-normal mt-4 font-3 fs-2 color-3">Мы проводим акции и дарим подарки нашим клиентам! Для первого ремонта в категории "Телефоны" предоставляем скидку 10% по промокоду "Wonder"! Также, в качестве бонуса при покупке смартфона защитное стекло и чехол в подарок! </p>
@@ -312,17 +432,11 @@
 <title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text>
       </div>
     </div>
-
-<!--<hr class="featurette-divider">-->
-    <!-- /END THE FEATURETTES -->
-
 <!--      Сотрудничество-->
       
       <div style="text-align: center;">
   <h2 class="featurette-heading fw-normal text-7 mt-4 font-4 lh-1 mb-4 animated-gradient-text">Мы сотрудничаем с:</h2>
-</div>
-
-      
+</div> 
       <div class="row">
       <div class="col-lg-4 aaa">
         <a class="aaa" target="_blank"  href='https://www.samsung.com/ru/'><img src="img/samsung.png" class="bd-placeholder-img rounded-circle " width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Samsung</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></a>
@@ -331,40 +445,21 @@
           <div class="col-lg-4 aaa">
         <a class="aaa" target="_blank"  href='https://www.realme.com/ru/'><img src="img/real.png" class="bd-placeholder-img rounded-circle " width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Realme</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></a>
       </div>
-          
-          
       <div class="col-lg-4 aaa">
         <a class="aaa" target="_blank"  href='https://www.honor.com/ru/'><img src="img/Honor.png" class="bd-placeholder-img rounded-circle " width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Honor</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></a>
       </div>
-          
           <div class="col-lg-4 aaa">
         <a class="aaa" target="_blank" href='https://www.apple.com/'><img src="img/apple-logo-1.png" class="bd-placeholder-img rounded-circle " width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Apple</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></a>
       </div>
-          
-          
           <div class="col-lg-4 aaa">
         <a class="aaa" target="_blank"  href='https://www.huawei.ru/'><img src="img/Huawei-1.png" class="bd-placeholder-img rounded-circle " width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Huawei</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></a>
       </div>
-          
-          
           <div class="col-lg-4 aaa">
         <a class="aaa" target="_blank"  href='https://www.mi.com/ru/'><img src="img/xiao.png" class="bd-placeholder-img rounded-circle " width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Xiaomi</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></a>
       </div>
-          
-          
-          <!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-      
-      
-      
-  </div><!-- /.container -->
-
-    
-    
-    
-    
-
-  <!-- FOOTER -->
+    </div>
+  </div>
+    <!-- FOOTER -->
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
@@ -372,7 +467,6 @@
       </a>
       <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Wonder-Phone, Inc. Все права защищены</span>
     </div>
-
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
       <li class="ms-3"><a class="text-body-secondary" target="_blank" href="https://www.avito.ru/user/b8eda4315a43a47edf1a0e6f347ad4f3/profile?src=sharing"><img src='img/12345.png' class="bi" width="24" height="24"><use xlink:href="#avito"/></a></li>
       <li class="ms-3"><a class="text-body-secondary" target="_blank" href="https://t.me/Wonder_Phone_bot"><img src="img/telegram.svg"class="bi" width="24" height="24"><use xlink:href="#telegram"/></a></li>
@@ -381,6 +475,5 @@
   </footer>
 </main>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
     </body>
 </html>
